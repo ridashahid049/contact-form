@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 06</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            background-color: rgba(225, 223, 223, 0.264);
+            border-radius: 10px;
+
+        }
+        h3{
+            font-size: 27px;
+            margin-bottom: 15px;
+        }
+        .form-row{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        label{
+            font-size: 15px;
+            display: block;
+            font-weight: bold;
+            margin: 18px 0 16px;
+        }
+        input
+        ,textarea{
+            width: 100%;
+            padding: 12px;
+            border: none;
+            outline: none;
+            background-color: #FFF;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        textarea{
+            height: 120px;
+        }
+        button{
+            background-color: rgb(21, 171, 121);
+            border: none;
+            padding: 15px 15px;
+            margin: 10px 0px;
+            color: white;
+            border-radius: 4px;
+        }
+        .image img{
+            width: 100%;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h3>
+                Get in touch with us
+            </h3>
+            <form>
+            <div class="form-row">
+                <div>
+                    <label>FULL NAME</label>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div>
+                    <label>EMAIL ADDRESS</label>
+                    <input type="email" placeholder="Email">
+                </div>
+                </div>
+                <label>SUBJECT</label>
+                <input type="text" placeholder="Subject">
+
+                <label>MASSAGE</label>
+                <textarea placeholder="Massage"></textarea>
+                <button>Send Massage</button>
+            
+            </form>
+            </div>
+            <div class="image">
+                <img src="./form.jpg" alt="Image">
+            </div>
+        
+    </div>
+</body>
+</html>
